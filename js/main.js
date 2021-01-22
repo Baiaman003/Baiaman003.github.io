@@ -13,7 +13,8 @@ let pi = [];
 btn.addEventListener('click', function(){
     list.innerHTML = "";
     let mx = 0*((+n.value-(+m.value + +k.value + +p.value)) / n.value) + A.value * m.value / n.value + B.value * k.value / n.value + C.value * p.value / n.value;
-    let dx = 
+    let dx = (0+Math.pow(A.value, 2) * (m.value / n.value) + Math.pow(B.value, 2) * (k.value / n.value) + Math.pow(C.value, 2) * (p.value / n.value)) - Math.pow(mx, 2);
+    let sko = Math.sqrt(dx);
     list.innerHTML +=(`
     <table>
         <tr>
@@ -40,11 +41,11 @@ btn.addEventListener('click', function(){
         </li>
 
         <li>
-            Дисперсия:              ${mx}
+            Дисперсия:              ${dx}
         </li>
 
         <li>
-            Среднее квадратичное отклонение: ${mx}
+            Среднее квадратичное отклонение: ${sko}
         </li>
 
     `);
