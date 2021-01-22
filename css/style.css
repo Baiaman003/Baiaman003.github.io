@@ -1,3 +1,13 @@
+
+
+table {
+  width: max-content;
+}
+
+input {
+  width: 100px;
+}
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -13,5 +23,22 @@ table, th, td {
     margin: 3px;
   }
   ul{
+    width: max-content;
     margin-top: 3px;
+  }
+
+  .res {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .task1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .task2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }

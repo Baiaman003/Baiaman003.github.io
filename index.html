@@ -7,27 +7,75 @@
     <link rel="stylesheet" href="././css/style.css">
 </head>
 <body>
-    <h2>Задание 2.</h2>
-    <p>Составить закон распределения случайной величины Х. Найти числовые характеристики случайной величины x (x – выигрыш владельца одного лотерейного билета).</p>
-    <ul>
-        <li>В лотерее разыгрываются N билетов;</li>
-        <li>m из них выигрывают по А рублей;</li>
-        <li>k из них выигрывают по В рублей;</li>
-        <li>p из них выигрывают по С рублей.</li>
-    </ul>
 
-    <input class="n" type="number" placeholder="Количество билетов N">
-    <input class="m" type="number" placeholder="Введите m">
-    <input class="k" type="number" placeholder="Введите k">
-    <input class="p" type="number" placeholder="Введите p">
-    <input class="A" type="number" placeholder="Введите A">
-    <input class="B" type="number" placeholder="Введите B">
-    <input class="C" type="number" placeholder="Введите C">
-    <button class="btn">Вычислить</button>
+    <div class="task1">
+        <h2>Задание 1.</h2>
+        <p>Составить закон  распределения случайной величины Х. </p>
+        <p>Для заданного закона распределения найти М(х), D(х), &delta;(х).</p>
+        <p>n – порядковый номер студента по списку в журнале.</p>
+        <table>
+            <tr>
+            <td>xi</td>
+            <td>n-10</td>
+            <td>n-6</td>
+            <td>n-2</td>
+            <td>n</td>
+            <td>n+1</td>
+            <td>n+3</td>
+            <td>+5</td>
+            <td>n+8</td>
+            </tr>
+            <tr>
+            <td>pi</td>
+            <td>0.17</td>
+            <td>0.03</td>
+            <td>0.16</td>
+            <td>0.07</td>
+            <td>0.12</td>
+            <td>0.4</td>
+            <td>0.04</td>
+            <td>0.01</td>
+            </tr>
+        </table>
 
-    <ol class="list">
+        <p><b>Введите ваш порядковый номер по списку в журнале (n):</b></p>
+        <input type="number" class="inpN" placeholder="Введите n">
+        <button class="btnT1">Вычислить</button>
+        <table class="tableT1">
+    
+        </table>
+    
+        <table class="tabResult">
+    
+        </table>
+        
 
-    </ol>
+    </div>
+
+    <div class="task2">
+        <h2>Задание 2.</h2>
+        <p>Составить закон распределения случайной величины Х. </p>
+        <p>Найти числовые характеристики случайной величины x (x – выигрыш владельца одного лотерейного билета).</p>
+        <ul>
+            <li>В лотерее разыгрываются N билетов;</li>
+            <li>m из них выигрывают по А рублей;</li>
+            <li>k из них выигрывают по В рублей;</li>
+            <li>p из них выигрывают по С рублей.</li>
+        </ul>
+    
+        <input class="n" type="number" placeholder="Введите N">
+        <input class="m" type="number" placeholder="Введите m">
+        <input class="k" type="number" placeholder="Введите k">
+        <input class="p" type="number" placeholder="Введите p">
+        <input class="A" type="number" placeholder="Введите A">
+        <input class="B" type="number" placeholder="Введите B">
+        <input class="C" type="number" placeholder="Введите C">
+        <button class="btn">Вычислить</button>
+    
+        <ol class="list">
+    
+        </ol>
+    </div>
 
     <script src="./js/main.js"></script>
 </body>
